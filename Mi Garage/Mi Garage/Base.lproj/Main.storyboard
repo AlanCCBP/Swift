@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mi_Garage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5nN-Rd-Xyj">
+                                <rect key="frame" x="16" y="20" width="343" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5nN-Rd-Xyj" secondAttribute="height" multiplier="343:314" id="ZvQ-PW-kyp"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kZg-bj-Ika">
+                                <rect key="frame" x="16" y="354" width="343" height="293"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdh-IG-6K3">
+                                        <rect key="frame" x="143" y="0.0" width="57" height="40.5"/>
+                                        <state key="normal" title="Acelerar"/>
+                                        <connections>
+                                            <action selector="acelerar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g5m-VY-rVk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBh-p8-PZ6">
+                                        <rect key="frame" x="126" y="50.5" width="91" height="40.5"/>
+                                        <state key="normal" title="Dar un paseo"/>
+                                        <connections>
+                                            <action selector="aumentarKms:" destination="BYZ-38-t0r" eventType="touchUpInside" id="avc-X1-vjo"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jph-Cl-WIe">
+                                        <rect key="frame" x="147" y="101" width="49" height="40.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKg-tY-95I">
+                                        <rect key="frame" x="147" y="151.5" width="49" height="40.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GL-jS-NUS">
+                                        <rect key="frame" x="147" y="202" width="49" height="40.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIs-3W-g69">
+                                        <rect key="frame" x="122" y="252.5" width="99" height="40.5"/>
+                                        <state key="normal" title="Siguiente auto"/>
+                                        <connections>
+                                            <action selector="changeCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3gP-UJ-0op"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kZg-bj-Ika" secondAttribute="bottom" constant="20" id="3jT-rb-Rsw"/>
+                            <constraint firstItem="5nN-Rd-Xyj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5qg-eJ-nyS"/>
+                            <constraint firstItem="5nN-Rd-Xyj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9uq-wz-YZY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kZg-bj-Ika" secondAttribute="trailing" id="NBt-EH-SIT"/>
+                            <constraint firstItem="kZg-bj-Ika" firstAttribute="top" secondItem="5nN-Rd-Xyj" secondAttribute="bottom" constant="20" id="UgQ-HO-eJv"/>
+                            <constraint firstItem="kZg-bj-Ika" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WzW-Rj-RaL"/>
+                            <constraint firstItem="5nN-Rd-Xyj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="y1B-Hn-LFy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brandLabel" destination="jph-Cl-WIe" id="3eX-lH-wIT"/>
+                        <outlet property="carImage" destination="5nN-Rd-Xyj" id="hTN-Zb-Fzr"/>
+                        <outlet property="milleageLabel" destination="0GL-jS-NUS" id="NfU-PU-k2a"/>
+                        <outlet property="modelLabel" destination="bKg-tY-95I" id="ue5-nl-pgf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

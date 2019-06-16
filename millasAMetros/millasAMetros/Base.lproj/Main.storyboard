@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="millasAMetros" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conversor de distancias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Bx-ye-lgi">
+                                <rect key="frame" x="26" y="30" width="268" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce aquí tu distancia a convertir" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8Sf-u8-wk3">
+                                <rect key="frame" x="26" y="82.5" width="268" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sfA-vx-JFU">
+                                <rect key="frame" x="108" y="127.5" width="104" height="29"/>
+                                <segments>
+                                    <segment title="Km"/>
+                                    <segment title="Mi"/>
+                                    <segment title="Yd"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hE0-KQ-VLR">
+                                <rect key="frame" x="108" y="165.5" width="104" height="29"/>
+                                <segments>
+                                    <segment title="Km"/>
+                                    <segment title="Mi"/>
+                                    <segment title="Yd"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="De" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jb-og-dav">
+                                <rect key="frame" x="68" y="131" width="25" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZH-t1-6ho">
+                                <rect key="frame" x="99" y="217.5" width="122" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Convertir"/>
+                                <connections>
+                                    <action selector="convertPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iRk-mP-RJT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otw-dR-jU4">
+                                <rect key="frame" x="80" y="169" width="13" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rM4-0x-QQi">
+                                <rect key="frame" x="115.5" y="270.5" width="91" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WZH-t1-6ho" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Fn-Yv-ofC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Bx-ye-lgi" secondAttribute="trailing" constant="10" id="0ZO-7g-WQN"/>
+                            <constraint firstItem="hE0-KQ-VLR" firstAttribute="top" secondItem="sfA-vx-JFU" secondAttribute="bottom" constant="10" id="1Tv-hF-aoT"/>
+                            <constraint firstItem="hE0-KQ-VLR" firstAttribute="leading" secondItem="otw-dR-jU4" secondAttribute="trailing" constant="15" id="73e-Fz-cEC"/>
+                            <constraint firstItem="9Bx-ye-lgi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="AhC-Q7-Kwf"/>
+                            <constraint firstItem="otw-dR-jU4" firstAttribute="top" secondItem="5jb-og-dav" secondAttribute="bottom" constant="14" id="BNU-11-gFD"/>
+                            <constraint firstItem="8Sf-u8-wk3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="DBO-jO-yxo"/>
+                            <constraint firstItem="8Sf-u8-wk3" firstAttribute="top" secondItem="9Bx-ye-lgi" secondAttribute="bottom" constant="25" id="Hbe-Lf-h8c"/>
+                            <constraint firstItem="rM4-0x-QQi" firstAttribute="top" secondItem="WZH-t1-6ho" secondAttribute="bottom" constant="5" id="ILh-kY-fFD"/>
+                            <constraint firstItem="sfA-vx-JFU" firstAttribute="top" secondItem="8Sf-u8-wk3" secondAttribute="bottom" constant="15" id="JoA-DA-74d"/>
+                            <constraint firstItem="sfA-vx-JFU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bZ8-js-CtA"/>
+                            <constraint firstItem="WZH-t1-6ho" firstAttribute="top" secondItem="hE0-KQ-VLR" secondAttribute="bottom" constant="24" id="cGJ-lL-9XZ"/>
+                            <constraint firstItem="9Bx-ye-lgi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="fOF-hK-F3c"/>
+                            <constraint firstItem="5jb-og-dav" firstAttribute="top" secondItem="8Sf-u8-wk3" secondAttribute="bottom" constant="18.5" id="faJ-lT-GhX"/>
+                            <constraint firstItem="WZH-t1-6ho" firstAttribute="top" secondItem="hE0-KQ-VLR" secondAttribute="bottom" constant="5" id="jib-ej-9Wq"/>
+                            <constraint firstItem="sfA-vx-JFU" firstAttribute="leading" secondItem="5jb-og-dav" secondAttribute="trailing" constant="15" id="kso-Y1-kxu"/>
+                            <constraint firstItem="rM4-0x-QQi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oyn-lY-T2Q"/>
+                            <constraint firstItem="rM4-0x-QQi" firstAttribute="top" secondItem="WZH-t1-6ho" secondAttribute="bottom" constant="5" id="q4n-Wl-a9x"/>
+                            <constraint firstItem="hE0-KQ-VLR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tu8-2j-hYA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Sf-u8-wk3" secondAttribute="trailing" constant="10" id="zKg-sj-f9F"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jib-ej-9Wq"/>
+                                <exclude reference="ILh-kY-fFD"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="jib-ej-9Wq"/>
+                                <include reference="ILh-kY-fFD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="distanceTextField" destination="8Sf-u8-wk3" id="4hM-hY-C2e"/>
+                        <outlet property="fromUnit" destination="sfA-vx-JFU" id="cw7-ZT-XDW"/>
+                        <outlet property="resultLabel" destination="rM4-0x-QQi" id="1im-2S-Mzu"/>
+                        <outlet property="toUnit" destination="hE0-KQ-VLR" id="qLC-wW-ZPt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.225352112676063" y="138.75"/>
+        </scene>
+    </scenes>
+</document>
