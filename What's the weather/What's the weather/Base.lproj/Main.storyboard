@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="What_s_the_weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="7Wu-Ui-Nj2">
+                                <rect key="frame" x="16" y="62" width="255.5" height="196"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPK-tM-T53" userLabel="TextLabel">
+                                <rect key="frame" x="284" y="0.0" width="284" height="320"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estados Unidos de Norteamérica" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NUa-rC-1Ot">
+                                        <rect key="frame" x="14.5" y="16" width="256" height="44"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="60"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="32"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16ºC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="kgs-Wu-TfB">
+                                        <rect key="frame" x="83" y="80" width="119" height="68.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.35939353498619964" green="0.57424506573345557" blue="0.64036722715736039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="NUa-rC-1Ot" firstAttribute="centerX" secondItem="TPK-tM-T53" secondAttribute="centerX" id="9JP-wf-aaG"/>
+                                    <constraint firstItem="kgs-Wu-TfB" firstAttribute="top" secondItem="NUa-rC-1Ot" secondAttribute="bottom" constant="20" id="9iN-Xs-dek"/>
+                                    <constraint firstItem="NUa-rC-1Ot" firstAttribute="width" secondItem="TPK-tM-T53" secondAttribute="width" multiplier="0.9" id="DdL-dy-asp"/>
+                                    <constraint firstItem="NUa-rC-1Ot" firstAttribute="top" secondItem="TPK-tM-T53" secondAttribute="top" constant="16" id="EZs-ma-MVI"/>
+                                    <constraint firstItem="kgs-Wu-TfB" firstAttribute="centerX" secondItem="TPK-tM-T53" secondAttribute="centerX" id="hHR-vg-WZL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60426999850904095" green="0.87178918742428479" blue="0.92112151015228427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Wu-Ui-Nj2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5wk-HL-TZO"/>
+                            <constraint firstItem="TPK-tM-T53" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6yq-lf-eNT"/>
+                            <constraint firstItem="TPK-tM-T53" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="8Me-RC-HBN"/>
+                            <constraint firstItem="7Wu-Ui-Nj2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cui-ic-xoL"/>
+                            <constraint firstItem="7Wu-Ui-Nj2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="NcY-ys-I46"/>
+                            <constraint firstItem="TPK-tM-T53" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="U6N-i0-wBn"/>
+                            <constraint firstItem="7Wu-Ui-Nj2" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="aLj-4J-Rtv"/>
+                            <constraint firstItem="TPK-tM-T53" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="adD-gx-OLE"/>
+                            <constraint firstItem="7Wu-Ui-Nj2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ecV-HK-fgY"/>
+                            <constraint firstItem="TPK-tM-T53" firstAttribute="top" secondItem="7Wu-Ui-Nj2" secondAttribute="bottom" constant="25" id="rdu-lD-gGM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TPK-tM-T53" secondAttribute="bottom" id="tlP-fJ-7p3"/>
+                            <constraint firstItem="7Wu-Ui-Nj2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="u3E-5U-zAh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TPK-tM-T53" secondAttribute="trailing" constant="-20" id="vb9-me-06X"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NcY-ys-I46"/>
+                                <exclude reference="6yq-lf-eNT"/>
+                                <exclude reference="8Me-RC-HBN"/>
+                                <exclude reference="U6N-i0-wBn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="5wk-HL-TZO"/>
+                                <include reference="NcY-ys-I46"/>
+                                <exclude reference="aLj-4J-Rtv"/>
+                                <exclude reference="ecV-HK-fgY"/>
+                                <include reference="6yq-lf-eNT"/>
+                                <include reference="8Me-RC-HBN"/>
+                                <include reference="U6N-i0-wBn"/>
+                                <exclude reference="adD-gx-OLE"/>
+                                <exclude reference="rdu-lD-gGM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clouds" width="300" height="196"/>
+    </resources>
+</document>
